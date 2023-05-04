@@ -25,7 +25,7 @@
                   <a class="nav-link" href="./index.html">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active" href="./overnight_stay.html">Stay <span class="sr-only">(current)</span></a>
+                  <a class="nav-link active" href="./overnight_stay.html">Quote <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="./dining.html">Dining</a>
@@ -41,7 +41,221 @@
           </nav>
     </header>
     <main>
-      
+        <div class="container">
+        
+            <main>
+                <div class=" col col-md-10 col-lg-7 mx-auto">
+                    <div class="card">
+                      <div class="card-body p-5">
+                        <h3 class="card-title">Overnight Stay Quote</h3>
+                          <hr />
+                          <form>
+                            <div class="row gx-6">
+                              <div class="col-sm-6">
+                                <label for="FirstNameInput">First Name:</label>
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  id="FirstNameInput"
+                                  placeholder="First Name"
+                                  required
+                                />
+                              </div>
+                              <div class="col-sm-6">
+                                <label for="LastNameInput">Last Name:</label>
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  id="LastNameInput"
+                                  placeholder="Last Name"
+                                  required
+                                /> 
+
+                              </div>
+                            </div>
+                            <div class="row gx-6">
+                                <div class="col-12">
+                                    <label for="emailInput">Email:</label>
+                                    <input
+                                      type="email"
+                                      class="form-control"
+                                      id="emailInput"
+                                      placeholder="Enter email"
+                                      required
+                                    />
+                                </div>
+                            </div>
+                            <div class="row gx-6">
+                                <div class="col-12">
+                                    <label for="checkInDate">Check In Date:</label>
+                                    <input
+                                      type="date"
+                                      class="form-control"
+                                      id="checkInDate"                                        
+                                      required
+                                    />
+                                </div>
+                                <div class="col-12">
+                                    <label for="stayDurationDays">Duration of Stay:</label>
+                                    <input
+                                      type="number"
+                                      class="form-control"
+                                      id="stayDurationDays"
+                                      placeholder="1 to 28 Days"
+                                      required
+                                    />
+                                </div>
+                                
+                            </div>
+                            <div class="row gx-6">
+                                <div class="col-md-6">
+                                    <label for="numOfAdults">How Many Adults:</label>
+                                    <input
+                                      type="number"
+                                      class="form-control"
+                                      id="numOfAdults"  
+                                      placeholder="1 to 4"                                      
+                                      required
+                                    />
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="numOfChildren">How Many Children:</label>
+                                    <input
+                                      type="number"
+                                      class="form-control"
+                                      id="numOfChildren"
+                                      placeholder="1 to 4"
+                                      required
+                                    />
+                                </div>
+                            </div>
+                            <div class="row gx-6">
+                                <div class="col-12 mt-2">
+                                  <h5>What type of room would you like?</h5>
+                                  <hr />
+                                </div>
+                                <div class="col-12">
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="radio"
+                                      name="roomTypeRadio"
+                                      id="kingRoom"
+                                    />
+                                    <label class="form-check-label" for="kingRoom">
+                                      King <p class="text-muted">(Max Occupancy: 2)</p>
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="radio"
+                                      name="roomTypeRadio"
+                                      id="queenRoom"
+                                      checked
+                                    />
+                                    <label class="form-check-label" for="queenRoom">
+                                        Queen <p class="text-muted">(Max Occupancy: 5 with Rollaway)</p>
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="radio"
+                                      name="roomTypeRadio"
+                                      id="twoBedroomSuite"
+                                      checked
+                                    />
+                                    <label class="form-check-label" for="twoBedroomSuite">
+                                        2-Bedroom Suite <p class="text-muted">(Max Occupancy: 6 with Sleeper Sofa)</p>
+                                    </label>
+                                  </div>
+                                  
+                                </div>
+                            </div>
+                            <div class="row gx-6">
+                                <div class="col-12 mt-2">
+                                  <h5>Discounts</h5>
+                                  <hr />
+                                </div>
+                                <div class="col-12">
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="radio"
+                                      name="discountsRadio"
+                                      id="noDiscount"
+                                      checked
+                                    />
+                                    <label class="form-check-label" for="noDiscount">
+                                      None 
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="radio"
+                                      name="discountsRadio"
+                                      id="aaaSenriorDiscount"
+                                      checked
+                                    />
+                                    <label class="form-check-label" for="aaaSenriorDiscount">
+                                        AAA or Senior <span class="text-muted">(10% Discount)</span>
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="radio"
+                                      name="discountsRadio"
+                                      id="militaryDiscount"
+                                      checked
+                                    />
+                                    <label class="form-check-label" for="militaryDiscount">
+                                        Military <span class="text-muted">(20% Discount)</span>
+                                    </label>
+                                  </div>
+                                  
+                                </div>
+                            </div>
+                            <div class="row gx-6 mt-3">
+                                <div class="col-12">
+                                    <button type="button" class="btn btn-primary" id="stayCostBtn">Estimate Stay Cost</button>
+                                </div>
+                              </div>
+                          
+                          
+                           <hr>
+                          </form>
+          
+                          <table>
+                              <tr>
+                                <td>Base Room Cost: </td>
+                                <td> $ <span id="baseRoomCost"> XXX XX</span></td>
+                              </tr>
+                              <tr>
+                                <td>Discount: </td>
+                                <td> $ <span id="roomDiscount"> XX XX</span></td>
+                              </tr>
+                              <tr>
+                                <td>Discounted Room Cost: </td>
+                                <td> $ <span id="discountedRoomCost"> XX XX</span></td>
+                              </tr>
+                              <tr>  
+                                <td>Tax: </td>
+                                <td> $  <span id="taxAdded"> XX XX</span></td>
+                              </tr>
+                              <tr>
+                                <td>Total Cost: </td>
+                                <td> $ <span id="totalCost"> XX XX</span></td>
+                          </table>
+                          
+                      </div>
+                  </div>
+              </div>
+            </main>
+            
+        
     </main>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
