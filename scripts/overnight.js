@@ -60,7 +60,6 @@ function onStayCostBtnElClicked() {
 }
 function formValidation(stayDurationDays, checkInDate, roomType) {
   //elements
-  const messageDivEL = document.getElementById("messageDiv");
   const numOfAdults = +document.getElementById("numOfAdults").value;
   const numOfChildren = +document.getElementById("numOfChildren").value;
 
@@ -78,11 +77,11 @@ function formValidation(stayDurationDays, checkInDate, roomType) {
 
   // Number of Adults/Children
   if (numOfAdults < 1 || numOfAdults > 4) {
-    alert("Number of Adults must be between 1 and 4");
+    alert("Number of Adults must be between 1 and 6");
     return true;
   }
   if (numOfChildren < 0 || numOfChildren > 4) {
-    alert("Number of Children must be between 1 and 4");
+    alert("Number of Children must be between 0 and 5");
   }
 
   //Room occupancy
@@ -104,6 +103,7 @@ function formValidation(stayDurationDays, checkInDate, roomType) {
 }
 
 function getRoomRate(checkInDate, roomType) {
+  //valid fo king queen and two-bedroom room types
   console.log("getRoomRate started");
   //base room rate
   let baseRate;
