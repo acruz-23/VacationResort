@@ -10,35 +10,45 @@
       crossorigin="anonymous"
     />
     <!-- <link rel="stylesheet" href="./css/resort.css" /> -->
-    
   </head>
   <body>
     <header>
-        <nav class="navbar navbar-expand-md navbar-dark bg-primary">
-            <a class="navbar-brand" href="./index.html">Resort</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link" href="./index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="./overnight_stay.html">Quote</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" href="./dining.html">Dining <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="./car_rental.html">Car Rental</a>
-                <li class="nav-item">
-                  <a class="nav-link" href="./activities.html">Activities</a>
-                </li>
-                </li>
-              </ul>
-            </div>
-          </nav>
+      <nav class="navbar navbar-expand-md navbar-dark bg-primary">
+        <a class="navbar-brand" href="./index.html">Resort</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./overnight_stay.html">Quote</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./dining.html">Dining </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="./car_rental.html"
+                >Car Rental<span class="sr-only">(current)</span></a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="./activities.html">Activities</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </header>
     <main>
       <div class="container-fluid">
@@ -46,84 +56,141 @@
           <div class="col col-md-10 col-lg-7 mx-auto">
             <div class="card">
               <div class="card-body p-5">
-                <h3 class="card-title">Dining Options</h3>
+                <h3 class="card-title">ACME Car Rental</h3>
                 <hr />
                 <form>
-                  
+                  <div class="row gx-6">
+                    <div class="col-sm-6">
+                      <label for="pickupDate">Pickup Date:</label>
+                      <input
+                        type="date"
+                        class="form-control"
+                        id="pickupDate"
+                        required
+                      />
+                    </div>
+                    <div class="col-sm-6">
+                      <label for="numOfDays">Number of days:</label>
+                      <input
+                        type="number"
+                        class="form-control"
+                        placeholder="XX"
+                        id="numOfDays"
+                        min="0"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-12 mt-2">
+                      <h5>Options:</h5>
+                      <hr />
+                    </div>
+                    <div class="col-12">
+                      <input
+                        type="checkbox"
+                        class="form-check-input"
+                        id="eToll"
+                        name="eToll"
+                        value="option1"
+                      />
+                      <label class="form-check-label" for="eToll"
+                        >Electronic Toll Tag ($3.95/day)</label
+                      >
+                    </div>
+                    <div class="col-12">
+                      <input
+                        type="checkbox"
+                        class="form-check-input"
+                        id="GPS"
+                        name="GPS"
+                        value="option2"
+                      />
+                      <label class="form-check-label" for="GPS"
+                        >GPS ($2.95/day)</label
+                      >
+                    </div>
+                    <div class="col-12">
+                      <input
+                        type="checkbox"
+                        class="form-check-input"
+                        id="roadside"
+                        name="roadside"
+                        value="option3"
+                      />
+                      <label class="form-check-label" for="roadside"
+                        >Roadside Assistance ($2.95/day)</label
+                      >
+                    </div>
+                  </div>
+                  <div class="row gx-6">
+                    <div class="col-12 mt-2">
+                      <h5>Under 25?</h5>
+                      <hr />
+                    </div>
+                    <div class="col-12">
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="age"
+                          id="yesRadioBtn"
+                          value="yesRadioBtn"
+                          checked
+                        />
+                        <label class="form-check-label" for="yesRadioBtn">
+                          Yes
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="age"
+                          id="noRadioBtn"
+                          value="noRadioBtn"
+                        />
+                        <label class="form-check-label" for="noRadioBtn">
+                          No
+                        </label>
+                      </div>
+                    </div>
+                  </div>
                 </form>
-                <div class="row mt-3" id="payAsyouGoContent">
-                  <h5 class="text-muted">
-                    Le-bernardin
-                  </h5><hr />
-                  <div class="col-sm-6">
-                    
-                    <p>Spadefish trahira, yellowfin grouper long-finned char mako shark stoneroller minnow Atlantic cod driftfish spiny dogfish. Snake mackerel scorpionfish goldeye; shell-ear dragonet, tetra blue whiting!</p>
-                    <!-- <p>Bacon ipsum dolor amet commodo irure burgdoggen incididunt kevin cupim voluptate ex. Pariatur tail beef ribs t-bone salami burgdoggen. Kielbasa in ut, cupim short ribs dolore minim in swine ex sed biltong lorem id ground round. Cupim leberkas chuck sunt shankle. Kielbasa ipsum non eiusmod elit. Chislic beef spare ribs, irure pastrami aute sed ut aliquip elit corned beef turducken in turkey.</p> -->
-                    
-                  </div>
-                  <div class="col-sm-6">
-                    <img
-                      src="./images/fishDish.jpeg"
-                      alt="Close up of the google vision kit in someone's hands."
-                      class="img-fluid"
-                    />
-                    <div class="index-btn mt-3">
-                      <a href="https://www.le-bernardin.com/home" class="btn bg-primary text-white">Go to Site</a>
-                    </div>
-                  </div>
-                
-                  <h5 class="text-muted">
-                    Gibsons Bar & Steakhouse
-                  </h5><hr />
-                  <div class="col-sm-6">
-                    <p>Bacon ipsum dolor amet commodo irure burgdoggen incididunt kevin cupim voluptate ex. Pariatur tail beef ribs t-bone salami burgdoggen. Kielbasa in ut, cupim short ribs dolore minim in swine!</p>
-                    
-                  </div>
-                  <div class="col-sm-6">
-                    <img
-                      src="./images/SteakDishsCrop.png"
-                      alt="Close up of the google vision kit in someone's hands."
-                      class="img-fluid"
-                    />
-                    <div class="index-btn mt-3">
-                      <a href="https://www.gibsonssteakhouse.com/" class="btn bg-primary text-white">Go to Site</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="row" id="allInclusiveContent">
+                <br />
+                <button type="button" class="btn btn-primary" id="costBtn">
+                  Estimate Rental Cost
+                </button>
+                <br />
+
+                <div class="row">
                   <div class="col-12">
                     <table class="table">
-                      <thead>
-                        <tr>
-                          <th>Plan</th>
-                          <th>Adult</th>
-                          <th>Child</th>
-                        </tr>
-                      </thead>
                       <tbody>
                         <tr>
-                          <td>Basic:</td>
-                          <td>$62.50/day</td>
-                          <td>$49.99/day</td>
+                          <td>Car Rental:</td>
+                          <td>$ <span id="carRentalBaseCost">XXX XX</span></td>
                         </tr>
                         <tr>
-                          <td>Preimum (Incl drinks):</td>
-                          <td>$80.00/day</td>
-                          <td>$49.99/day</td>
+                          <td>Options:</td>
+                          <td>$<span id="optionsCost">XX XX</span></td>
+                        </tr>
+                        <tr id="surchargeRow">
+                          <td>Under 25 Surcharge:</td>
+                          <td>$<span id="ageSurcharge">XX XX</span></td>
+                        </tr>
+                        <tr>
+                          <td>Total Due:</td>
+                          <td>$ <span id="totalRentalCost">XX XX</span></td>
                         </tr>
                       </tbody>
                     </table>
                   </div>
-                  <div class="col-12">
-                    <P class="text-muted">Plans added to reservation at check-in.</P>
-                  </div>
-                </div> 
-              </div>  
-            </div>     
-          </div>      
-        </div>                 
-      </div>            
-                
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </main>
     <script
@@ -131,6 +198,6 @@
       integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
       crossorigin="anonymous"
     ></script>
-    <script src="./scripts/dining.js"></script>
+    <script src="./scripts/car_rental.js"></script>
   </body>
 </html>
