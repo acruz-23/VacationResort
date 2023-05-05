@@ -9,7 +9,7 @@
       integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./css/commerce.css" />
+    <!-- <link rel="stylesheet" href="./css/resort.css" /> -->
     
   </head>
   <body>
@@ -41,12 +41,123 @@
           </nav>
     </header>
     <main>
-      
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col col-md-10 col-lg-7 mx-auto">
+            <div class="card">
+              <div class="card-body p-5">
+                <h3 class="card-title">Dining Options</h3>
+                <hr />
+                <form>
+                  <div class="col-12">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="diningOptions"
+                        id="payAsYouGoDining"
+                        checked
+                      />
+                      <label class="form-check-label" for="payAsYouGoDining">
+                        <em>Pay As You Go</em> 
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="diningOptions"
+                        id="allInclusiveDining"
+                      />
+                      <label
+                        class="form-check-label"
+                        for="allInclusiveDining"
+                      >
+                        All-inclusive
+                      </label>
+                    </div>
+                  </div>
+                </form>
+                <div class="row mt-3" id="payAsyouGoContent">
+                  <h5 class="text-muted">
+                    Le-bernardin
+                  </h5><hr />
+                  <div class="col-sm-6">
+                    
+                    <p>Spadefish trahira, yellowfin grouper long-finned char mako shark stoneroller minnow Atlantic cod driftfish spiny dogfish. Snake mackerel scorpionfish goldeye; shell-ear dragonet, tetra blue whiting!</p>
+                    <!-- <p>Bacon ipsum dolor amet commodo irure burgdoggen incididunt kevin cupim voluptate ex. Pariatur tail beef ribs t-bone salami burgdoggen. Kielbasa in ut, cupim short ribs dolore minim in swine ex sed biltong lorem id ground round. Cupim leberkas chuck sunt shankle. Kielbasa ipsum non eiusmod elit. Chislic beef spare ribs, irure pastrami aute sed ut aliquip elit corned beef turducken in turkey.</p> -->
+                    
+                  </div>
+                  <div class="col-sm-6">
+                    <img
+                      src="./images/fishDish.jpeg"
+                      alt="Close up of the google vision kit in someone's hands."
+                      class="img-fluid"
+                    />
+                    <div class="index-btn mt-3">
+                      <a href="https://www.le-bernardin.com/home" class="btn bg-primary text-white">Go to Site</a>
+                    </div>
+                  </div>
+                
+                  <h5 class="text-muted">
+                    Gibsons Bar & Steakhouse
+                  </h5><hr />
+                  <div class="col-sm-6">
+                    <p>Bacon ipsum dolor amet commodo irure burgdoggen incididunt kevin cupim voluptate ex. Pariatur tail beef ribs t-bone salami burgdoggen. Kielbasa in ut, cupim short ribs dolore minim in swine!</p>
+                    
+                  </div>
+                  <div class="col-sm-6">
+                    <img
+                      src="./images/SteakDishsCrop.png"
+                      alt="Close up of the google vision kit in someone's hands."
+                      class="img-fluid"
+                    />
+                    <div class="index-btn mt-3">
+                      <a href="https://www.gibsonssteakhouse.com/" class="btn bg-primary text-white">Go to Site</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="row" id="allInclusiveContent">
+                  <div class="col-12">
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th>Plan</th>
+                          <th>Adult</th>
+                          <th>Child</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Basic:</td>
+                          <td>$62.50/day</td>
+                          <td>$49.99/day</td>
+                        </tr>
+                        <tr>
+                          <td>Preimum (Incl drinks):</td>
+                          <td>$80.00/day</td>
+                          <td>$49.99/day</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="col-12">
+                    <P class="text-muted">Plans added to reservation at check-in.</P>
+                  </div>
+                </div> 
+              </div>  
+            </div>     
+          </div>      
+        </div>                 
+      </div>            
+                
+      </div>
     </main>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
       crossorigin="anonymous"
     ></script>
+    <script src="./scripts/dining.js"></script>
   </body>
 </html>

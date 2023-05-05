@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta charset="utf-8" />
+    <title>Resort Page</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
       crossorigin="anonymous"
     />
+    <!-- <link rel="stylesheet" href="./css/resort.css" /> -->
+    
   </head>
   <body>
     <header>
@@ -27,11 +27,11 @@
                 <li class="nav-item">
                   <a class="nav-link" href="./overnight_stay.html">Quote</a>
                 </li>
-                <li class="nav-item ">
-                  <a class="nav-link" href="./dining.html">Dining</a>
+                <li class="nav-item">
+                  <a class="nav-link active" href="./dining.html">Dining <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active" href="./car_rental.html">Car Rental <span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="./car_rental.html">Car Rental</a>
                 <li class="nav-item">
                   <a class="nav-link" href="./activities.html">Activities</a>
                 </li>
@@ -40,117 +40,97 @@
             </div>
           </nav>
     </header>
-    <div class="container">
-        
-        <main>
-            <div class=" col col-md-10 col-lg-7 mx-auto">
-                <div class="card">
-                  <div class="card-body p-5">
-                      <h2><strong>Car Rentals</strong></h2>
-                      <hr />
-                      <label for="numOfScoops">Number of scoops:</label>
-                      <input type="number" class="form-control" value="" id="numOfScoops" min="1" max="4" required/> <br />
-                      <div class="form-check">
-                          <input
-                            class="form-check-input"
-                            type="radio"
-                            name="iceCreamContainer"
-                            id="cupRadioBtn"
-                            checked
-                          />
-                          <label class="form-check-label" for="cupRadioBtn">
-                            Cup
-                          </label>
-                      </div>
-                      <div class="form-check">
-                          <input
-                            class="form-check-input"
-                            type="radio"
-                            name="iceCreamContainer"
-                            id="coneRadioBtn"
-                            
-                          />
-                          <label class="form-check-label" for="coneRadioBtn">
-                            Cone
-                          </label>
-                      </div>
-                      
-                      <hr>
-                      <div class="toppings"  >
-                          <h3 id="toppingTitle">Toppings</h3>
-                          <div class="row" id="toppingOptions">
-                              <div class="col-sm-6 mx-auto">
-                                  <input
-                                    type="checkbox"
-                                    class="form-check-input"
-                                    id="sprinkleOption"
-                                  />
-                                  <label class="form-check-label" for="sprinkleOption"
-                                    >Sprinkles ($0.50)</label
-                                  >
-                              </div>
-                              <div class="col-sm-6 mx-auto">
-                                  <input
-                                    type="checkbox"
-                                    class="form-check-input"
-                                    id="whippedCreamOption"
-                                  />
-                                  <label class="form-check-label" for="whippedCreamOption"
-                                    >Whipped Cream ($0.25)</label
-                                  >
-                              </div>
-                              <div class="col-sm-6 mx-auto">
-                                  <input
-                                    type="checkbox"
-                                    class="form-check-input"
-                                    id="hotFudgeOption"
-                                  />
-                                  <label class="form-check-label" for="hotFudgeOption"
-                                    >Hot Fudge ($1.25)</label
-                                  >
-                              </div>
-                              <div class="col-sm-6 mx-auto">
-                                  <input
-                                    type="checkbox"
-                                    class="form-check-input"
-                                    id="cherryOption"
-                                  />
-                                  <label class="form-check-label" for="cherryOption"
-                                    >Cherry ($0.25)</label
-                                  >
-                              </div>
-                          </div>
-                      </div><br>
-                      <button type="button" class="btn btn-primary" id="submitOrderBtn">Submit Order</button>
-                      <hr>
-      
-                      <table>
-                          <tr>
-                          <td>Base Price: </td>
-                          <td> $ <span id="basePrice"> XX XX</span></td>
-                          </tr>
-                          <tr>
-                          <td>Tax: </td>
-                          <td> $ <span id="taxAdded"> XX XX</span></td>
-                          </tr>
-                          <tr>
-                          <td>Total Due: </td>
-                          <td> $ <span id="totalDue"> XX XX</span></td>
-                      </table>
+    <main>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col col-md-10 col-lg-7 mx-auto">
+            <div class="card">
+              <div class="card-body p-5">
+                <h3 class="card-title">Dining Options</h3>
+                <hr />
+                <form>
+                  
+                </form>
+                <div class="row mt-3" id="payAsyouGoContent">
+                  <h5 class="text-muted">
+                    Le-bernardin
+                  </h5><hr />
+                  <div class="col-sm-6">
+                    
+                    <p>Spadefish trahira, yellowfin grouper long-finned char mako shark stoneroller minnow Atlantic cod driftfish spiny dogfish. Snake mackerel scorpionfish goldeye; shell-ear dragonet, tetra blue whiting!</p>
+                    <!-- <p>Bacon ipsum dolor amet commodo irure burgdoggen incididunt kevin cupim voluptate ex. Pariatur tail beef ribs t-bone salami burgdoggen. Kielbasa in ut, cupim short ribs dolore minim in swine ex sed biltong lorem id ground round. Cupim leberkas chuck sunt shankle. Kielbasa ipsum non eiusmod elit. Chislic beef spare ribs, irure pastrami aute sed ut aliquip elit corned beef turducken in turkey.</p> -->
+                    
                   </div>
-              </div>
-          </div>
-        </main>
-        
-    
-    
+                  <div class="col-sm-6">
+                    <img
+                      src="./images/fishDish.jpeg"
+                      alt="Close up of the google vision kit in someone's hands."
+                      class="img-fluid"
+                    />
+                    <div class="index-btn mt-3">
+                      <a href="https://www.le-bernardin.com/home" class="btn bg-primary text-white">Go to Site</a>
+                    </div>
+                  </div>
+                
+                  <h5 class="text-muted">
+                    Gibsons Bar & Steakhouse
+                  </h5><hr />
+                  <div class="col-sm-6">
+                    <p>Bacon ipsum dolor amet commodo irure burgdoggen incididunt kevin cupim voluptate ex. Pariatur tail beef ribs t-bone salami burgdoggen. Kielbasa in ut, cupim short ribs dolore minim in swine!</p>
+                    
+                  </div>
+                  <div class="col-sm-6">
+                    <img
+                      src="./images/SteakDishsCrop.png"
+                      alt="Close up of the google vision kit in someone's hands."
+                      class="img-fluid"
+                    />
+                    <div class="index-btn mt-3">
+                      <a href="https://www.gibsonssteakhouse.com/" class="btn bg-primary text-white">Go to Site</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="row" id="allInclusiveContent">
+                  <div class="col-12">
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th>Plan</th>
+                          <th>Adult</th>
+                          <th>Child</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Basic:</td>
+                          <td>$62.50/day</td>
+                          <td>$49.99/day</td>
+                        </tr>
+                        <tr>
+                          <td>Preimum (Incl drinks):</td>
+                          <td>$80.00/day</td>
+                          <td>$49.99/day</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="col-12">
+                    <P class="text-muted">Plans added to reservation at check-in.</P>
+                  </div>
+                </div> 
+              </div>  
+            </div>     
+          </div>      
+        </div>                 
+      </div>            
+                
+      </div>
+    </main>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
       crossorigin="anonymous"
     ></script>
-    <script src="./scripts/car_rental.js"></script>
+    <script src="./scripts/dining.js"></script>
   </body>
 </html>
-
-

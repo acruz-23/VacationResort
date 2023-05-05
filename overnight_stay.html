@@ -51,223 +51,243 @@
       </nav>
     </header>
     <main>
-      <div class="container">
-        <div class="col col-md-10 col-lg-7 mx-auto">
-          <div class="card">
-            <div class="card-body p-5">
-              <h3 class="card-title">Overnight Stay Quote</h3>
-              <hr />
-              <form>
-                <div class="row gx-6">
-                  <div class="col-sm-6">
-                    <label for="FirstNameInput">First Name:</label>
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="FirstNameInput"
-                      placeholder="First Name"
-                      required
-                    />
-                  </div>
-                  <div class="col-sm-6">
-                    <label for="LastNameInput">Last Name:</label>
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="LastNameInput"
-                      placeholder="Last Name"
-                      required
-                    />
-                  </div>
-                </div>
-                <div class="row gx-6">
-                  <div class="col-12">
-                    <label for="emailInput">Email:</label>
-                    <input
-                      type="email"
-                      class="form-control"
-                      id="emailInput"
-                      placeholder="Enter email"
-                      required
-                    />
-                  </div>
-                </div>
-                <div class="row gx-6">
-                  <div class="col-12">
-                    <label for="checkInDate">Check In Date:</label>
-                    <input
-                      type="date"
-                      class="form-control"
-                      id="checkInDate"
-                      required
-                    />
-                  </div>
-                  <div class="col-12">
-                    <label for="stayDurationDays">Duration of Stay:</label>
-                    <input
-                      type="number"
-                      class="form-control"
-                      id="stayDurationDays"
-                      placeholder="1 to 28 Days"
-                      required
-                    />
-                  </div>
-                </div>
-                <div class="row gx-6">
-                  <div class="col-md-6">
-                    <label for="numOfAdults">How Many Adults:</label>
-                    <input
-                      type="number"
-                      class="form-control"
-                      id="numOfAdults"
-                      placeholder="1 to 4"
-                      min="1"
-                      max="4"
-                      required
-                    />
-                  </div>
-                  <div class="col-md-6">
-                    <label for="numOfChildren">How Many Children:</label>
-                    <input
-                      type="number"
-                      class="form-control"
-                      id="numOfChildren"
-                      placeholder="0 to 4"
-                      min="0"
-                      max="4"
-                      required
-                    />
-                  </div>
-                </div>
-                <div class="row gx-6">
-                  <div class="col-12 mt-2">
-                    <h5>What type of room would you like?</h5>
-                    <hr />
-                  </div>
-                  <div class="col-12">
-                    <div class="form-check">
-                      <input
-                        class="form-check-input"
-                        type="radio"
-                        name="roomTypeRadio"
-                        id="kingRoom"
-                        checked
-                      />
-                      <label class="form-check-label" for="kingRoom">
-                        King
-                        <span class="text-muted">(Max Occupancy: 2)</span>
-                      </label>
-                    </div>
-                    <div class="form-check">
-                      <input
-                        class="form-check-input"
-                        type="radio"
-                        name="roomTypeRadio"
-                        id="queenRoom"
-                      />
-                      <label class="form-check-label" for="queenRoom">
-                        Queen
-                        <span class="text-muted">
-                          (Max Occupancy: 5 with Rollaway)
-                        </span>
-                      </label>
-                    </div>
-                    <div class="form-check">
-                      <input
-                        class="form-check-input"
-                        type="radio"
-                        name="roomTypeRadio"
-                        id="twoBedroomSuite"
-                      />
-                      <label class="form-check-label" for="twoBedroomSuite">
-                        2-Bedroom Suite
-                        <span class="text-muted">
-                          (Max Occupancy: 6 with Sleeper Sofa)
-                        </span>
-                      </label>
-                    </div>
-                  </div>
-                </div>
-                <div class="row gx-6">
-                  <div class="col-12 mt-2">
-                    <h5>Discounts</h5>
-                    <hr />
-                  </div>
-                  <div class="col-12">
-                    <div class="form-check">
-                      <input
-                        class="form-check-input"
-                        type="radio"
-                        name="discountsRadio"
-                        id="noDiscount"
-                        checked
-                      />
-                      <label class="form-check-label" for="noDiscount">
-                        None
-                      </label>
-                    </div>
-                    <div class="form-check">
-                      <input
-                        class="form-check-input"
-                        type="radio"
-                        name="discountsRadio"
-                        id="aaaSenriorDiscount"
-                      />
-                      <label class="form-check-label" for="aaaSenriorDiscount">
-                        AAA or Senior
-                        <span class="text-muted">(10% Discount)</span>
-                      </label>
-                    </div>
-                    <div class="form-check">
-                      <input
-                        class="form-check-input"
-                        type="radio"
-                        name="discountsRadio"
-                        id="militaryDiscount"
-                      />
-                      <label class="form-check-label" for="militaryDiscount">
-                        Military <span class="text-muted">(20% Discount)</span>
-                      </label>
-                    </div>
-                  </div>
-                </div>
-                <div class="row gx-6 mt-3">
-                  <div class="col-12">
-                    <button
-                      type="button"
-                      class="btn btn-primary"
-                      id="stayCostBtn"
-                    >
-                      Estimate Stay Cost
-                    </button>
-                  </div>
-                </div>
-
+      <div class="container-fluid">
+        <div class="row px-0 mx-0">
+          <div class="col-12 px-0 mx-0">
+            <div class="card bg-dark text-white">
+              <img
+                src="./images/BeachSunsetOverlookResizeUpscale.jpg"
+                alt="Scenic overview of sunset over the Ocean"
+                alt="Card image"
+              />
+              <div class="card-img-overlay">
+                <h3 class="card-title">Your Relaxing Vacation Awaits</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col col-md-10 col-lg-7 mx-auto">
+            <div class="card">
+              <div class="card-body p-5">
+                <h3 class="card-title">Overnight Stay Quote</h3>
                 <hr />
-              </form>
+                <form>
+                  <div class="row gx-6">
+                    <div class="col-sm-6">
+                      <label for="FirstNameInput">First Name:</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="FirstNameInput"
+                        placeholder="First Name"
+                        required
+                      />
+                    </div>
+                    <div class="col-sm-6">
+                      <label for="LastNameInput">Last Name:</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="LastNameInput"
+                        placeholder="Last Name"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="row gx-6">
+                    <div class="col-12">
+                      <label for="emailInput">Email:</label>
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="emailInput"
+                        placeholder="Enter email"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="row gx-6">
+                    <div class="col-12">
+                      <label for="checkInDate">Check In Date:</label>
+                      <input
+                        type="date"
+                        class="form-control"
+                        id="checkInDate"
+                        required
+                      />
+                    </div>
+                    <div class="col-12">
+                      <label for="stayDurationDays">Duration of Stay:</label>
+                      <input
+                        type="number"
+                        class="form-control"
+                        id="stayDurationDays"
+                        placeholder="1 to 28 Days"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="row gx-6">
+                    <div class="col-md-6">
+                      <label for="numOfAdults">How Many Adults:</label>
+                      <input
+                        type="number"
+                        class="form-control"
+                        id="numOfAdults"
+                        placeholder="1 to 4"
+                        min="1"
+                        max="4"
+                        required
+                      />
+                    </div>
+                    <div class="col-md-6">
+                      <label for="numOfChildren">How Many Children:</label>
+                      <input
+                        type="number"
+                        class="form-control"
+                        id="numOfChildren"
+                        placeholder="0 to 4"
+                        min="0"
+                        max="4"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="row gx-6">
+                    <div class="col-12 mt-2">
+                      <h5>What type of room would you like?</h5>
+                      <hr />
+                    </div>
+                    <div class="col-12">
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="roomTypeRadio"
+                          id="kingRoom"
+                          checked
+                        />
+                        <label class="form-check-label" for="kingRoom">
+                          King
+                          <span class="text-muted">(Max Occupancy: 2)</span>
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="roomTypeRadio"
+                          id="queenRoom"
+                        />
+                        <label class="form-check-label" for="queenRoom">
+                          Queen
+                          <span class="text-muted">
+                            (Max Occupancy: 5 with Rollaway)
+                          </span>
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="roomTypeRadio"
+                          id="twoBedroomSuite"
+                        />
+                        <label class="form-check-label" for="twoBedroomSuite">
+                          2-Bedroom Suite
+                          <span class="text-muted">
+                            (Max Occupancy: 6 with Sleeper Sofa)
+                          </span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row gx-6">
+                    <div class="col-12 mt-2">
+                      <h5>Discounts</h5>
+                      <hr />
+                    </div>
+                    <div class="col-12">
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="discountsRadio"
+                          id="noDiscount"
+                          checked
+                        />
+                        <label class="form-check-label" for="noDiscount">
+                          None
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="discountsRadio"
+                          id="aaaSenriorDiscount"
+                        />
+                        <label
+                          class="form-check-label"
+                          for="aaaSenriorDiscount"
+                        >
+                          AAA or Senior
+                          <span class="text-muted">(10% Discount)</span>
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="discountsRadio"
+                          id="militaryDiscount"
+                        />
+                        <label class="form-check-label" for="militaryDiscount">
+                          Military
+                          <span class="text-muted">(20% Discount)</span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row gx-6 mt-3">
+                    <div class="col-12">
+                      <button
+                        type="button"
+                        class="btn btn-primary"
+                        id="stayCostBtn"
+                      >
+                        Estimate Stay Cost
+                      </button>
+                    </div>
+                  </div>
 
-              <table>
-                <tr>
-                  <td>Base Room Cost:</td>
-                  <td>$ <span id="baseRoomCost"> XXX XX</span></td>
-                </tr>
-                <tr>
-                  <td>Discount:</td>
-                  <td>-$ <span id="roomDiscount"> XX XX</span></td>
-                </tr>
-                <tr>
-                  <td>Room with Discount:</td>
-                  <td>$ <span id="discountedRoomCost"> XX XX</span></td>
-                </tr>
-                <tr>
-                  <td>Tax:</td>
-                  <td>$ <span id="taxAdded"> XX XX</span></td>
-                </tr>
-                <tr>
-                  <td>Total Due:</td>
-                  <td>$ <span id="stayCost"> XX XX</span></td>
-                </tr>
-              </table>
+                  <hr />
+                </form>
+
+                <table class="table">
+                  <tr>
+                    <td>Base Room Cost:</td>
+                    <td>$ <span id="baseRoomCost"> XXX XX</span></td>
+                  </tr>
+                  <tr>
+                    <td>Discount:</td>
+                    <td>-$ <span id="roomDiscount"> XX XX</span></td>
+                  </tr>
+                  <tr>
+                    <td>Room with Discount:</td>
+                    <td>$ <span id="discountedRoomCost"> XX XX</span></td>
+                  </tr>
+                  <tr>
+                    <td>Tax:</td>
+                    <td>$ <span id="taxAdded"> XX XX</span></td>
+                  </tr>
+                  <tr>
+                    <td>Total Due:</td>
+                    <td>$ <span id="stayCost"> XX XX</span></td>
+                  </tr>
+                </table>
+              </div>
             </div>
           </div>
         </div>
