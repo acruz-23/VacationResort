@@ -9,3 +9,9 @@ Main_Page:
 ![Main Page](./images/Index%20screenshot.png "Main page")
 
 ![Quote Page](./images/QuoteScreenshot.png "Quote Page")
+
+![Dinning Page](./images/Dining%20Screenshot.png "Quote Page")
+
+![Car Rental](./images/CarRentalScreenshot.png "Car Rental Page")
+
+![Activities Page](./images/activitiesscreenshot.png "Activities Page")
